@@ -23,6 +23,8 @@ sortButton.addEventListener("click", () => {
   populate()
  });
 
+
+ 
  showGraphButton.addEventListener("click", () => {
    bubbleSortStudents();
    populate();
