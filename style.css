@@ -1,0 +1,107 @@
+#studentForm button {
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.updater{
+    background-color: #007bff;
+    color: #fff; 
+}
+.eraser{
+    background-color: #0a0a0a;
+    color: #fff; 
+}
+#studentTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#studentTable th,
+#studentTable td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+#sort-button {
+
+    background-color: lightseagreen;
+    color: #fff;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+#showGraphButton{
+
+    background-color: darkblue;
+    color: #fff;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+#calculator-button{
+
+    background-color: darkblue;
+    color: #fff;
+    border: none;
+    padding: 10px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+#studentTable th {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+}
+
+#studentTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+#studentTable tr:hover {
+    background-color: #f1f1f1;
+}
+
+button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#marksChart {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1,h2,h3 {
+   
+    color: #007bff;
+    font:bolder;
+}
+body {
+    background-color: aliceblue;
+    border: 1px solid;
+    border-radius: 20px;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SchoolSystem</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+<body>
+    <h1>School Management System</h1>
+    <h2>IT Class</h2>
+
+    <input type="text" id="searchInput"  placeholder="Search students" onkeyup="searchStudents()">
+
+    <h3>Add learner</h3>
+    <form id="studentForm">
+        <label>Name:</label>
+        <input type="text" name="names" id="name" required>
+        <label>Surname:</label>
+        <input type="text" name="surname" id="surname" required>
+        <label>Marks:</label>
+        <input type="number" name="marks" id="marks" required>
+        <button type="button" id="submit-button" > Add Learner</button>
+    </form>
+    <h3>List Student</h3>
+    <table id="studentTable">
+
+        <button id="sort-button">Sort Students by Marks</button>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Surname</th>
+                <th >Marks</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="studentTableBody">
+
+        </tbody>
+    </table>
+    <button id="showGraphButton">Show Graph</button>
+    <canvas id="marksChart" width="400" height="200"></canvas>
+
+    <button type="button" id="calculator-button">Calculator</button>
+     
+    
+            
+    <script src="script.js" ></script>
+</body>
+</html>
