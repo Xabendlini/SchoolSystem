@@ -12,8 +12,19 @@
         <input type="text" id="book-input" placeholder="Enter book title or author">
         <button id="book-search-button">Search</button>
         <div id="book-result"></div>
-      </div>
+    </div>
 
-   <script src="fetchAPI.js"></script>
+    <div id="upload-section">
+        <h2>Upload Resources</h2>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <label for="fileInput">Select a file:</label>
+            <input type="file" id="fileInput" name="fileInput" accept=".pdf,.doc,.docx,.txt" required>
+            <br><br>
+            <button type="submit">Upload</button>
+        </form>
+        <div id="result"></div>
+    </div>
+
+    <script src="fetchAPI.js"></script>
 </body>
 </html>

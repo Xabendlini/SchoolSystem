@@ -3,53 +3,55 @@ body {
     margin: 0;
     padding: 20px;
     background-color: aliceblue;
-  }
-  h2 {
+}
+
+h2 {
     color: #007bff;
-    font:bolder;
-  }
-  
-  #book-section {
+    font-weight: bold;
+}
+
+#book-section, #upload-section {
     width: 80%;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
-  }
-  
-  #book-input {
+    margin-bottom: 20px;
+}
+
+#book-input {
     width: 80%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ddd;
     border-radius: 3px;
-  }
-  
-  #book-search-button {
+}
+
+#book-search-button {
     padding: 10px 20px;
     background-color: blue;
     color: white;
     border: none;
     border-radius: 3px;
     cursor: pointer;
-  }
-  
-  #book-result {
+}
+
+#book-result {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  
-  #book-result div {
+}
+
+#book-result div {
     width: 200px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
     padding: 10px;
     border-radius: 5px;
-  }
-  
-  #book-result img {
+}
+
+#book-result img {
     width: 100%;
     margin-top: 10px;
-  }
+}
