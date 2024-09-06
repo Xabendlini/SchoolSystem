@@ -1,22 +1,88 @@
-#studentForm button {
-    background-color: blue;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue; 
+    border: 1px solid #ddd; 
+    border-radius: 20px; 
 }
 
-.updater{
-    background-color: #007bff;
-    color: #fff; 
+h1, h2, h3 {
+    text-align: center;
+    color: #007bff; 
+    font-weight: bold; 
 }
-.eraser{
-    background-color: #0a0a0a;
-    color: #fff; 
+
+nav {
+    background-color: #eee;
+    padding: 10px;
+    text-align: center;
 }
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav button {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 16px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; 
+    cursor: pointer;
+}
+
+nav button.active {
+    background-color: #007bff; 
+    color: white;
+}
+
+nav button:hover {
+    background-color: #ddd; 
+}
+
+#tab-content {
+    margin: 20px;
+}
+.tab-page {
+    display: none; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tab-page.active {
+    display: block; 
+}
+
+#studentForm {
+    margin-top: 20px;
+}
+
+#studentForm label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#studentForm input[type="text"],
+#studentForm input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
 #studentTable {
     width: 100%;
     border-collapse: collapse;
@@ -29,63 +95,40 @@
     text-align: left;
     border-bottom: 1px solid #ddd;
 }
-#sort-button {
-
-    background-color: lightseagreen;
-    color: #fff;
-    border: none;
-    padding: 10px 12px;
-    border-radius: 3px;
-    cursor: pointer;
-    font-size: 12px;
-    transition: background-color 0.3s ease;
-}
-#showGraphButton{
-
-    background-color: darkblue;
-    color: #fff;
-    border: none;
-    padding: 10px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 12px;
-    transition: background-color 0.3s ease;
-}
-
-#calculator-button{
-
-    background-color: darkblue;
-    color: #fff;
-    border: none;
-    padding: 10px 12px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 12px;
-    transition: background-color 0.3s ease;
-}
 
 #studentTable th {
-    background-color: #007bff;
+    background-color: #007bff; 
     color: #fff;
     font-weight: bold;
 }
 
 #studentTable tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; 
 }
 
 #studentTable tr:hover {
-    background-color: #f1f1f1;
+    background-color: #f1f1f1; 
 }
 
-button {
-    margin-right: 5px;
-    padding: 5px 10px;
+
+#submit-button,
+#sort-button,
+#showGraphButton,
+#calculator-button,
+.updater,
+.eraser {
+    background-color: #007bff; 
+    color: #fff;
     border: none;
+    padding: 10px 15px;
     border-radius: 4px;
-    font-size: 14px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    font-size: 16px;
+    transition: background-color 0.3s ease; 
+    margin-right: 5px; 
+}
+.eraser {
+    background-color: #0a0a0a;
 }
 
 #marksChart {
@@ -93,15 +136,4 @@ button {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1,h2,h3 {
-   
-    color: #007bff;
-    font:bolder;
-}
-body {
-    background-color: aliceblue;
-    border: 1px solid;
-    border-radius: 20px;
 }

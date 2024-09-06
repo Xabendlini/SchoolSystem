@@ -10,42 +10,56 @@
 <body>
     <h1>School Management System</h1>
     <h2>IT Class</h2>
-
-    <input type="text" id="searchInput"  placeholder="Search students" onkeyup="searchStudents()">
-
-    <h3>Add learner</h3>
-    <form id="studentForm">
-        <label>Name:</label>
-        <input type="text" name="names" id="name" required>
-        <label>Surname:</label>
-        <input type="text" name="surname" id="surname" required>
-        <label>Marks:</label>
-        <input type="number" name="marks" id="marks" required>
-        <button type="button" id="submit-button" > Add Learner</button>
-    </form>
-    <h3>List Student</h3>
-    <table id="studentTable">
-
-        <button id="sort-button">Sort Students by Marks</button>
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Surname</th>
-                <th >Marks</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody id="studentTableBody">
-
-        </tbody>
-    </table>
-    <button id="showGraphButton">Show Graph</button>
-    <canvas id="marksChart" width="400" height="200"></canvas>
-
     <button type="button" id="calculator-button">Calculator</button>
-     
+
+    <nav>
+        <ul>
+            <li><button id="add-student-tab" class="active">Add Learner</button></li>
+            <li><button id="list-students-tab">List Students</button></li>
+            <li><button id="graph-tab">Graph</button></li>
+        </ul>
+    </nav>
+
+    <div id="tab-content">
+        <div id="add-student-page" class="tab-page active">
+            <h3>Add Learner</h3>
+            <form id="studentForm">
+                <label>Name:</label>
+                <input type="text" name="names" id="name" required>
+                <label>Surname:</label>
+                <input type="text" name="surname" id="surname" required>
+                <label>Marks:</label>
+                <input type="number" name="marks" id="marks" required>
+                <button type="button" id="submit-button">Add Learner</button>
+            </form>
+        </div>
+
+        <div id="list-students-page" class="tab-page">
+            <h3>List Student</h3>
+            <input type="text" id="searchInput" placeholder="Search students" onkeyup="searchStudents()">
+            <table id="studentTable">
+                <button id="sort-button">Sort Students by Marks</button>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Surname</th>
+                        <th >Marks</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="studentTableBody">
+                </tbody>
+            </table>
+        </div>
+
+        <div id="graph-page" class="tab-page">
+            <h3>Graph</h3>
+            <button id="showGraphButton">Show Graph</button>
+            <canvas id="marksChart" width="400" height="200"></canvas>
+        </div>
+    </div>
     
-            
-    <script src="script.js" ></script>
+   
+    <script src="script.js"></script>
 </body>
 </html>
