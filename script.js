@@ -1,5 +1,3 @@
-// script.js
-
 const addStudentTab = document.getElementById("add-student-tab");
 const listStudentsTab = document.getElementById("list-students-tab");
 const graphTab = document.getElementById("graph-tab");
@@ -180,7 +178,7 @@ function renderChart() {
     }
 
     marksChart = new Chart(marksChartCanvas, {
-        type: 'bar', // You can change the chart type (bar, line, pie, etc.)
+        type: 'line', 
         data: {
             labels: labels,
             datasets: [{
@@ -217,4 +215,4 @@ function renderChart() {
     });
 }
 
-populate(); // Load students from localStorage on page load
+populate();
